@@ -2,9 +2,11 @@ import { View, Text, Button, Image } from "react-native-web";
 
 export const Welcome = ({ navigation }) => {
   return (
-    <View>
-      <Text> Bienvenido a Cervezapp</Text>
+    <View className="bg-black">
+      {/* Add an animation that takes the IMG above and adds text and buttons below. */}
       <Image source={require("../assets/BeerIcon.png")} />
+      <Text> Séptima - Cocina Artesanal </Text>
+
       <Button
         title="Iniciar Sesión"
         onPress={() => navigation.navigate("Login")}
