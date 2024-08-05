@@ -1,5 +1,5 @@
-import { View, Text, Button, Image } from "react-native-web";
-
+import { View, Text, Button, Image, StyleSheet } from "react-native";
+import { NativeWindStyleSheet } from "nativewind";
 export const Welcome = ({ navigation }) => {
   return (
     <View className="bg-black">

@@ -1,4 +1,4 @@
-import { View, Text } from "react-native-web";
+import { View, Text } from "react-native";
 export const BeerScreen = () => {
   return (
     <View>
