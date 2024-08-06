@@ -1,24 +1,17 @@
-import { View, Text, Button, Image, StyleSheet } from "react-native";
+import { Link } from "expo-router";
+import { View, Text, Image } from "react-native";
 
-export const Welcome = ({ navigation }) => {
+export const Welcome = () => {
   return (
     <View>
-      {/* Add an animation that takes the IMG above and adds text and buttons below. */}
       <Image source={require("../assets/BeerIcon.png")} />
       <Text> Séptima - Cocina Artesanal </Text>
 
-      <Button
-        title="Iniciar Sesión"
-        onPress={() => navigation.navigate("Login")}
-      />
-      <Button
-        title="Registrarse"
-        onPress={() => navigation.navigate("Register")}
-      />
-      <Button
-        title="Continuar como invitado"
-        onPress={() => navigation.navigate("Home")}
-      />
+      <Link href="/login">Iniciar sesión</Link>
+      <Link href="/register">Registrarse</Link>
+      <Link href="/home">Continuar como invitado</Link>
     </View>
   );
 };
+
+export default Welcome;

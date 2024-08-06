@@ -1,8 +1,10 @@
 import { View, Text } from "react-native";
-export const BeerScreen = () => {
+const BeerScreen = () => {
   return (
     <View>
       <Text> Recetas </Text>
     </View>
   );
 };
+
+export default BeerScreen;

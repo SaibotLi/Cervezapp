@@ -1,8 +1,9 @@
 import { View, Text } from "react-native";
-export const LoginScreen = () => {
+const LoginScreen = () => {
   return (
     <View>
-      <Text> Inicia Sesión </Text>
+      <Text> Iniciar Sesión </Text>
     </View>
   );
 };
+export default LoginScreen;
