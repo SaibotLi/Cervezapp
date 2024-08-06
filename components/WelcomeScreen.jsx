@@ -1,8 +1,8 @@
 import { View, Text, Button, Image, StyleSheet } from "react-native";
-import { NativeWindStyleSheet } from "nativewind";
+
 export const Welcome = ({ navigation }) => {
   return (
-    <View className="bg-black">
+    <View>
       {/* Add an animation that takes the IMG above and adds text and buttons below. */}
       <Image source={require("../assets/BeerIcon.png")} />
       <Text> Séptima - Cocina Artesanal </Text>
