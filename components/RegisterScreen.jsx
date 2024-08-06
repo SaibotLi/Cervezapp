@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 const RegisterScreen = () => {
   return (
     <View>
-      <Text>Registrarse</Text>
+      <Text>Registrate aquí</Text>
     </View>
   );
 };
