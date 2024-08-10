@@ -1,11 +1,12 @@
 import { Link } from "expo-router";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 
 export const Welcome = () => {
   return (
     <View>
       <Image source={require("../assets/BeerIcon.png")} />
-      <Text> Séptima - Cocina Artesanal </Text>
+      <Text style={styles.title}>Séptima</Text>
+      <Text>Cocina Artesanal</Text>
 
       <Link href="/login">Iniciar sesión</Link>
       <Link href="/register">Registrarse</Link>
@@ -13,5 +14,13 @@ export const Welcome = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  title: {
+fontWeight: "bold",
+fontSize: 30,
+fontFamily: "trainOne"
+  }
+})
 
 export default Welcome;
