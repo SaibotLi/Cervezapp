@@ -28,8 +28,9 @@
     "router": {
       "pages": {
         "./app/login.js": "Login",
-        "./components/register.js": "Register",
-        "./components/home.js": "Home"
+        "./app/register.js": "Register",
+        "./app/home.js": "Home",
+        "./app/index.js": "Welcome"
       }
     }
   }
