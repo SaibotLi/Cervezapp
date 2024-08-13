@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 const RegisterScreen = () => {
   return (
     <View>
-                  <Link href="/">Inicio</Link>
+      <Link href="/">Inicio</Link>
       <Text>Registrate aquí</Text>
     </View>
   );

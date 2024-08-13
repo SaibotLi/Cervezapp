@@ -1,4 +1,4 @@
-import { Welcome } from "../components/WelcomeScreen";
+import { Welcome } from "../screens/WelcomeScreen";
 
 export default function Index() {
   return <Welcome />;
