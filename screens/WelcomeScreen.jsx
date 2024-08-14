@@ -14,7 +14,7 @@ export const Welcome = () => {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
+    flex: 1,
     width: "100%",
     alignItems: "center",
     justifyContent: "center",

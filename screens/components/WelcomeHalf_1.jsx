@@ -18,28 +18,27 @@ export default WelcomeHalf_1;
 
 const styles = StyleSheet.create({
   container_half_1: {
-    height: "50dvh",
-    width: "100vh",
-    display: "flex",
-    justifyContent: "flex-start",
+    height: "50%",
+    width: "100%",
+    justifyContent: "center",
     alignItems: "center",
   },
   logo_img: {
-    width: 100,
-    height: 100,
-    marginBottom: 20,
+    width: 134,
+    height: 150,
+    marginBottom: 5,
+    marginLeft: 20,
   },
   logo_title: {
     fontWeight: "bold",
     fontSize: 40,
     fontFamily: "trainOne",
     textAlign: "center",
-    marginBottom: 10,
+    marginBottom: 5,
   },
   logo_subtitle: {
     fontSize: 18,
     fontFamily: "poppins",
     textAlign: "center",
-    marginBottom: 20,
   },
 });

@@ -1,7 +1,9 @@
+import { useRouter } from "expo-router";
 import { Link } from "expo-router";
 import { StyleSheet, View, Pressable, Text } from "react-native";
-
+// MANAGE PRESSABLES WITH EXPO-ROUTER ELIMINATE LINKS
 const WelcomeHalf_2 = () => {
+  const router = useRouter();
   return (
     <View style={styles.container_half_2}>
       <Text style={styles.welcome_text}>¡Bienvenido!</Text>
@@ -11,30 +13,37 @@ const WelcomeHalf_2 = () => {
         persiguiendo.
       </Text>
       <View style={styles.button_container}>
-        <Pressable style={styles.pressable_link}>
-          <Link href="/login" style={styles.link_login}>
-            Iniciar sesión
-          </Link>
+        <Pressable
+          style={styles.pressable_link}
+          onPress={() => router.push("login")}
+        >
+          <Text style={styles.link_login}>Iniciar sesión</Text>
         </Pressable>
-        <Pressable style={styles.pressable_link}>
-          <Link href="/register" style={styles.link_register}>
+        <Pressable
+          style={styles.pressable_link}
+          onPress={() => router.push("register")}
+        >
+          <Text href="/register" style={styles.link_register}>
             Registrarse
-          </Link>
+          </Text>
         </Pressable>
       </View>
       <Link href="/home" style={styles.link_guest}>
-        Continuar como invitado{" "}
+        Continuar como invitado
       </Link>
     </View>
   );
 };
 const styles = StyleSheet.create({
   container_half_2: {
-    height: "50dvh",
+    flex: 1,
+    width: "100%",
     backgroundColor: "orange",
-    display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignItems: "center",
+    borderTopWidth: 1,
+    borderTopStartRadius: 50,
+    borderTopEndRadius: 50,
   },
   welcome_text: {
     fontSize: 25,
@@ -42,43 +51,41 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 10,
+    paddingBottom: 15,
   },
   description_text: {
-    fontSize: 16,
+    fontSize: 20,
     fontFamily: "poppins",
     textAlign: "center",
-    paddingHorizontal: 20,
-    marginBottom: 20,
+    marginBottom: 15,
+    width: "90%",
   },
   button_container: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    width: "70%",
+    justifyContent: "center",
   },
   pressable_link: {
-    padding: 4,
-    margin: 8,
+    margin: 10,
     backgroundColor: "black",
-    width: "25%",
-    height: 50,
-    borderRadius: 14,
+    width: 175,
+    height: 60,
+    borderRadius: 99,
     justifyContent: "center",
     alignItems: "center",
+    marginTop: "10%",
   },
   link_login: {
     color: "white",
     fontSize: 16,
-    marginTop: 6,
   },
   link_register: {
     color: "white",
     fontSize: 16,
-    marginTop: 6,
   },
   link_guest: {
     fontWeight: "bold",
     fontSize: 16,
-    marginTop: 12,
+    marginTop: "10%",
   },
 });
 
